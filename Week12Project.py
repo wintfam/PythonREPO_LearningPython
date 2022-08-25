@@ -23,6 +23,7 @@ len("MyAWSlist")
 
 MyAWSlist.remove("EC2")
 MyAWSlist.remove("S3")
+print("MyAWSlist")
 
 
 
