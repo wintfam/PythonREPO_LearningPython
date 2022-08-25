@@ -15,10 +15,15 @@ MyAWSlist.append("DynamoDB")
 
 
 #Print the list and the length of the list
+print ("MyAWSlist")
 
+len("MyAWSlist")
 
+#Remove two specific services from the list
 
-#Remove two specific services from the list by name or by index
+MyAWSlist.remove("EC2")
+MyAWSlist.remove("S3")
+
 
 
 #Print the new list and the new length of the list
