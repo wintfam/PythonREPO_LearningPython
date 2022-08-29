@@ -21,10 +21,14 @@ print(MyAWSlist)
 print ("\nThis prints out the length of our list:")
 
 print(len(MyAWSlist))
-
+print(MyAWSlist)
 #Remove two specific services from the list
+
+print("\nThis prints out our new list with Lambda and S3 removed:")
 MyAWSlist.remove("Lambda")
 MyAWSlist.remove("S3")
 print(MyAWSlist)
+
+
 #Print the new list and the new length of the list
-print("\nThis prints out the length of our new list:")
+len("MyAWSlist")
