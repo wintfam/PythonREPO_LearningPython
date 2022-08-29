@@ -1,5 +1,5 @@
 print ("Hello, World!!")
-print ("Week12, LUIT Projec!!!!")
+print ("Week12, LUIT Projec!!")
 
 
 #The list should be empty initially
