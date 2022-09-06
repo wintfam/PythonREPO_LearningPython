@@ -14,20 +14,20 @@ print ("Initialize EC2 Random Name Generator")
 
 import random
 import string
-from time import sleep
+
 
 #Identify Department/Area
-dept = []
-dept = input ("UX/Design, DevOps, Audio-Visual, Software\n")
-ec2_name= int(len(input("Insert the amount of EC2 instances preferred:")))
+
+department = input ("UX/Design, DevOps, Audio-Visual, Software\n")
+ec2_name= int(input("Insert the amount of EC2 instances preferred:"))
 
 num_of_instances = input('How many EC2 instances do you want to provision?\n')
 
 #2. Allow the user to input the name of their department that is used in
 
-department = input('What is your department?\n')
+department = input('What is your department?')
 
-print(f"You have asked to provision {num_of_instances} EC2 instances for the {dept} department\n The names are: \n")
+print(f"You have asked to provision {num_of_instances} EC2 instances for the {department} department\n The names are: \n")
 
 #3.Generate random characters and numbers that will be included in the unique name.
 for _ in range (int(ec2_count)):
