@@ -21,13 +21,11 @@ dept = []
 dept = input ("UX/Design, DevOps, Audio-Visual, Software\n")
 ec2_name= int(len(input("Insert the amount of EC2 instances preferred:")))
 
+num_of_instances = input('How many EC2 instances do you want to provision?\n')
 
+department = input('What is your department?\n')
 
-letters= (string.ascii_letters+string.digits)
-unique = '-'.join(random.sample(letters,5))
-print(unique)
+print(f"You have asked to provision {num_of_instances} EC2 instances for the {department} department\n The names are: \n")
 
-#below function gives you an unique EC2 name with a random generated departmet
-result = (dept)
-aws_ec2_name= (unique)
-print(random.choice(dept), unique)
+for _ in range (int(num_of_instances)):
+    print (str(dept),''.join([choice(string.ascii_uppercase + string.digits) for _ in range(10)]))
