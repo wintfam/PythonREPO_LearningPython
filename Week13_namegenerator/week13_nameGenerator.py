@@ -5,7 +5,7 @@
 #3. Generate random characters and numbers that will be included in the unique name.
 
 print("Anthony Wint")
-print(__name__)
+
 
 import random
 import string
