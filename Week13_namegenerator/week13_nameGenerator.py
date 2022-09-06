@@ -29,7 +29,6 @@ department = input('What is your department?\n')
 
 print(f"You have asked to provision {num_of_instances} EC2 instances for the {dept} department\n The names are: \n")
 
-#2. Allow the user to input the name of their department that is used in 
-
+#3.Generate random characters and numbers that will be included in the unique name.
 for _ in range (int(ec2_count)):
 print (str(dept), ''.join([choice(string.ascii_uppercase + string.digits) for _ in range(N)]))
