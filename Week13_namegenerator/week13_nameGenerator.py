@@ -5,7 +5,11 @@
 #3. Generate random characters and numbers that will be included in the unique name.
 
 print("Anthony Wint")
+print("Week13 LUIT Project")
 
+print ("Initialize EC2 Random Name Generator")
 
-import random
-import string
+#Identify Department/Area
+dept = input ("Home/Office, Computers, Audio-Visual, Software\n")
+
+#Valid Department/Areas
