@@ -10,6 +10,6 @@ print("Week13 LUIT Project")
 print ("Initialize EC2 Random Name Generator")
 
 #Identify Department/Area
-dept = input ("Home/Office, Computers, Audio-Visual, Software\n")
+dept = input ("UX/Design, DevOps, Audio-Visual, Software\n")
 
 #Valid Department/Areas
