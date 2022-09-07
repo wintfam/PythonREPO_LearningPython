@@ -21,7 +21,7 @@ import string
 department = input ("UX/Design, DevOps, Audio-Visual, Software\n")
 ec2_name= int(input("Insert the amount of EC2 instances preferred:"))
 
-num_of_instances = input('How many EC2 instances do you want to provision?\n')
+num_of_instances = input int('How many EC2 instances do you want to provision?\n')
 
 #2. Allow the user to input the name of their department that is used in
 
