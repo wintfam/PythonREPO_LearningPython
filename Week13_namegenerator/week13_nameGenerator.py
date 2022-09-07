@@ -21,7 +21,6 @@ import string
 dept_list = ['UX/Design', 'DevOps', 'Software']
 
 
-# Allow the user to input how many EC2 instances they want names for and output the same amount of unique names
 # Allow the user to input the name of their department that is used in the unique name
 
 instance_num = int(input("How many instances are desired? "))
@@ -31,7 +30,7 @@ dept = str(input("Enter department name: "))
 # Generate random characters and numbers that will be included in the unique name
 
 characters_numbers = (string.ascii_letters + string.digits)
-unique_name = ''.join(random.sample(characters_numbers, 8))
+unique_name = ''.join(random.sample(characters_numbers, 7))
 print(unique_name)
 
 
