@@ -16,32 +16,27 @@ import random
 import string
 
 
-#Identify Department/Area
+# List of departments sharing AWS environment
 
-ec2_name = int(input("Insert the amount of EC2 instances preferred:"))
+dept_list = ['UX/Design', 'DevOps', 'Software']
 
-num_of_instances = input(int('How many EC2 instances do you want to provision?'))
 
-#2. Allow the user to input the name of their department that is used in
+# Allow the user to input how many EC2 instances they want names for and output the same amount of unique names
+# Allow the user to input the name of their department that is used in the unique name
 
-department = input('What is your department?')
+instance_num = int(input("How many instances are desired? "))
+dept = str(input("Enter department name: "))
 
-print(f"You have asked to provision {num_of_instances} EC2 instances for the {department} department")
 
-#3.Generate random characters and numbers that will be included in the unique name.
-counter = 1
-allowed = ['UX/design' , 'Devopps' , 'Software' , 'Scrum Master']
+# Generate random characters and numbers that will be included in the unique name
 
-how_many = int(input("number of EC2 will be created?"))
-dept = input("name your department")
+characters_numbers = (string.ascii_letters + string.digits)
+unique_name = ''.join(random.sample(characters_numbers, 8))
+print(unique_name)
 
-if dept not in allowed
-    print('This genarator is restricted to specific department only!!!')
-    
-else:
-    while counter <= how_many:
-        letter = random.choices(string.ascli_letters, k=3)
-        letterlist = "" .join(letters)
-        numbers = random.sample(range(100, 999), k=1)
-        print(dept.title()+"-"+letterlist+str(*numbers))
-        counter += 1
+
+# Random generated department and EC2 with a unique name
+
+output = (dept_list)
+ec2_name = (unique_name)
+print(random.choice(dept_list), unique_name)
