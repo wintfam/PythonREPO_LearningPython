@@ -18,17 +18,30 @@ import string
 
 #Identify Department/Area
 
-department = input ("UX/Design, DevOps, Audio-Visual, Software\n")
-ec2_name= int(input("Insert the amount of EC2 instances preferred:"))
+ec2_name = int(input("Insert the amount of EC2 instances preferred:"))
 
-num_of_instances = input int('How many EC2 instances do you want to provision?\n')
+num_of_instances = input(int('How many EC2 instances do you want to provision?'))
 
 #2. Allow the user to input the name of their department that is used in
 
 department = input('What is your department?')
 
-print(f"You have asked to provision {num_of_instances} EC2 instances for the {department} department\n The names are: \n")
+print(f"You have asked to provision {num_of_instances} EC2 instances for the {department} department")
 
 #3.Generate random characters and numbers that will be included in the unique name.
-for _ in range (int(ec2_count)):
-print (str(dept), ''.join([choice(string.ascii_uppercase + string.digits) for _ in range(N)]))
+counter = 1
+allowed = ['UX/design' , 'Devopps' , 'Software' , 'Scrum Master']
+
+how_many = int(input("number of EC2 will be created?"))
+dept = input("name your department")
+
+if dept not in allowed
+    print('This genarator is restricted to specific department only!!!')
+    
+else:
+    while counter <= how_many:
+        letter = random.choices(string.ascli_letters, k=3)
+        letterlist = "" .join(letters)
+        numbers = random.sample(range(100, 999), k=1)
+        print(dept.title()+"-"+letterlist+str(*numbers))
+        counter += 1
